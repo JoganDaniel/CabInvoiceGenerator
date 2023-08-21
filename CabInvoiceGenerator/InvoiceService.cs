@@ -6,7 +6,6 @@
         private readonly int minimumFareNormal = 5;
         private readonly int costPerMinuteNormal = 1;
 
-
         public int NumberOfRides
         {
             get
