@@ -22,5 +22,14 @@
             }
             return minimumFareNormal;
         }
+        public double CalculateFareForRide(Ride ride)
+        {
+            double TotalAmount = ride.distance * costPerKilometerNormal + ride.time * costPerMinuteNormal;
+            if (TotalAmount > minimumFareNormal)
+            {
+                return TotalAmount;
+            }
+            return minimumFareNormal;
+        }
     }
 }
