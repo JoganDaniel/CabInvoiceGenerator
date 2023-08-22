@@ -41,7 +41,7 @@
         {
             foreach (Ride ride in rides)
             {
-                totalFare = ride.distance * COST_PER_KM + ride.time * COST_PER_MIN;
+                totalFare += ride.distance * COST_PER_KM + ride.time * COST_PER_MIN;
             }
             totalNumberOfRides = rides.Length;
             averageFare = totalFare/ totalNumberOfRides;
